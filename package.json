@@ -1,0 +1,28 @@
+{
+  "name": "@dsh-external/ds-whale-send-button",
+  "version": "0.1.0",
+  "description": "把对话输入栏的主发送按钮图标替换为 DeepSeek 官方鲸鱼 logo（CSS mask 覆盖，亮暗主题自适应，不改发送行为）",
+  "private": true,
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}
