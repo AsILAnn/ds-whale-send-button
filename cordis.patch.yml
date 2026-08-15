@@ -1,0 +1,5 @@
+# ds-whale-send-button bundle 层：注册 client roster 行。
+- insert:
+    - id: ds-whale-send-button
+      name: '@dsh-external/ds-whale-send-button'
+      config: {}
